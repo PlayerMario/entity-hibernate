@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "57860f98-861e-4601-a59f-3e4ce2433203",
+		"name": "Trianafy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23783353"
+	},
+	"item": [
+		{
+			"name": "Artist",
+			"item": [
+				{
+					"name": "Lista artistas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artist/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artist",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar artista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artist/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artist",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear artista",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Wu-Tang Clan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/artist/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artist",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar artista",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mobb Depp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/artist/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artist",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar artista",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/artist/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"artist",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Song",
+			"item": [
+				{
+					"name": "Lista canciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/song/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"song",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar canción",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/song/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"song",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear canción",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"The song\",\r\n    \"artistId\": 3,\r\n    \"album\" : \"The album\",\r\n    \"year\": \"2000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/song/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"song",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar canción",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"The new song\",\r\n    \"artistId\": 3,\r\n    \"album\" : \"The new album\",\r\n    \"year\": \"2001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/song/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"song",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar canción",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/song/9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"song",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Playlist",
+					"item": [
+						{
+							"name": "Lista playlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mostrar playlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear playlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Múscia90\",\r\n    \"description\": \"Mi nueva lista de música\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/list/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Editar playlist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Múscia noventera\",\r\n    \"description\": \"Mi nueva lista\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/list/12",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Borrar playlist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Song-Playlist",
+					"item": [
+						{
+							"name": "Lista canciones en playlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12/song/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12",
+										"song",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mostrar canción en playlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12/song/8",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12",
+										"song",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Agregar canción en playlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12/song/7",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12",
+										"song",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Borrar canción en playlist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/list/12/song/9",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"list",
+										"12",
+										"song",
+										"9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
